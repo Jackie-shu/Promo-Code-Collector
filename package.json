@@ -2,7 +2,10 @@
   "name": "boilerplate-react-webpack",
   "version": "0.2.2",
   "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-academy-challenges/boilerplate-react-webpack.git"
+  },
   "main": "server/index.js",
   "author": "EDA",
   "license": "ISC",
@@ -11,7 +14,9 @@
     "dev": "node server & webpack --watch",
     "server": "node server",
     "start": "webpack && node server",
-    "knex": "knex"
+    "knex": "knex",
+    "test": "jest --verbose --noStackTrace",
+    "test:watch": "npm test -- --watchAll"
   },
   "babel": {
     "presets": [
@@ -34,10 +39,10 @@
     "@material-ui/styles": "^4.6.0",
     "bootstrap": "^4.3.1",
     "express": "^4.16.4",
-    "knex": "^0.20.1",
+    "knex": "^0.20.6",
     "material-ui-popup-state": "^1.4.1",
     "react-router-dom": "^5.1.2",
-    "sqlite3": "^4.1.0",
+    "sqlite3": "^4.1.1",
     "superagent": "^5.0.2"
   },
   "devDependencies": {
@@ -57,5 +62,13 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/dev-academy-challenges/boilerplate-react-webpack/issues"
+  },
+  "homepage": "https://github.com/dev-academy-challenges/boilerplate-react-webpack#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
 }
