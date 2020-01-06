@@ -1,8 +1,7 @@
 const connection = require('./connection')
 
 module.exports = {
-    getAllCode,
-    getAllWebsite
+    getAllCode
 }
 
 function getAllCode(db = connection) {
