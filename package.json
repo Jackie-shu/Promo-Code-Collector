@@ -39,7 +39,7 @@
     "@material-ui/styles": "^4.6.0",
     "bootstrap": "^4.3.1",
     "express": "^4.16.4",
-    "knex": "^0.20.6",
+    "knex": "^2.4.0",
     "material-ui-popup-state": "^1.4.1",
     "react-router-dom": "^5.1.2",
     "sqlite3": "^4.1.1",
